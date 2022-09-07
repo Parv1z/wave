@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'waveico';
+  src:
+    url('waveico.ttf?wgbxwk') format('truetype'),
+    url('waveico.woff?wgbxwk') format('woff'),
+    url('waveico.svg?wgbxwk#waveico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'waveico' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wi-link:before {
+  content: "\e905";
+}
+.wi-chronometer:before {
+  content: "\e900";
+}
+.wi-phone:before {
+  content: "\e901";
+}
+.wi-medal:before {
+  content: "\e902";
+}
+.wi-lamp:before {
+  content: "\e903";
+}
+.wi-home:before {
+  content: "\e904";
+}
+.wi-book:before {
+  content: "\e91f";
+}
+.wi-folder-open:before {
+  content: "\e930";
+}
+.wi-location2:before {
+  content: "\e948";
+}
+.wi-printer:before {
+  content: "\e954";
+}
+.wi-bubbles2:before {
+  content: "\e96d";
+}
+.wi-users:before {
+  content: "\e972";
+}
+.wi-flag:before {
+  content: "\e9cc";
+}
+.wi-play3:before {
+  content: "\ea1c";
+}
+.wi-arrow-right2:before {
+  content: "\ea3c";
+}
+.wi-envelope-o:before {
+  content: "\f003";
+}
+.wi-tint:before {
+  content: "\f043";
+}
+.wi-twitter:before {
+  content: "\f099";
+}
+.wi-globe:before {
+  content: "\f0ac";
+}
+.wi-bars:before {
+  content: "\f0c9";
+}
+.wi-navicon:before {
+  content: "\f0c9";
+}
+.wi-reorder:before {
+  content: "\f0c9";
+}
+.wi-caret-left:before {
+  content: "\f0d9";
+}
+.wi-caret-right:before {
+  content: "\f0da";
+}
+.wi-angle-double-up:before {
+  content: "\f102";
+}
+.wi-angle-left:before {
+  content: "\f104";
+}
+.wi-angle-right:before {
+  content: "\f105";
+}
+.wi-quote-left:before {
+  content: "\f10d";
+}
+.wi-youtube-square:before {
+  content: "\f166";
+}
+.wi-youtube-play:before {
+  content: "\f16a";
+}
+.wi-instagram:before {
+  content: "\f16d";
+}
+.wi-skype:before {
+  content: "\f17e";
+}
+.wi-vk:before {
+  content: "\f189";
+}
+.wi-steam-square:before {
+  content: "\f1b7";
+}
+.wi-git-square:before {
+  content: "\f1d2";
+}
+.wi-wechat:before {
+  content: "\f1d7";
+}
+.wi-weixin:before {
+  content: "\f1d7";
+}
+.wi-paper-plane:before {
+  content: "\f1d8";
+}
+.wi-send:before {
+  content: "\f1d8";
+}
+.wi-paper-plane-o:before {
+  content: "\f1d9";
+}
+.wi-send-o:before {
+  content: "\f1d9";
+}
+.wi-twitch:before {
+  content: "\f1e8";
+}
+.wi-paypal:before {
+  content: "\f1ed";
+}
+.wi-cc-visa:before {
+  content: "\f1f0";
+}
+.wi-cc-paypal:before {
+  content: "\f1f4";
+}
+.wi-facebook-official:before {
+  content: "\f230";
+}
+.wi-whatsapp:before {
+  content: "\f232";
+}
+.wi-odnoklassniki-square:before {
+  content: "\f264";
+}
+.wi-volume-control-phone:before {
+  content: "\f2a0";
+}
+.wi-snowflake-o:before {
+  content: "\f2dc";
+}

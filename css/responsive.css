@@ -1,0 +1,199 @@
+@media all and (max-width: 1400px) {
+	.main-slider{padding: 160px 0 200px 0;}
+	.slider-content h1{font-size: 3rem;}
+	.main-slider .slick-slide img{width: 100%;}
+	.wv-service-text-icon:before{border-left: 290px solid rgba(255, 255, 255, 0);}
+}
+
+@media all and (max-width: 1200px) {
+	.slider-content h1{font-size: 2.6rem;line-height: 60px;}
+	.main-slider{padding: 160px 0 150px 0;}
+	.wv_cats-right{margin-bottom:30px;margin-left: auto;}
+	.wv_cats-right ul{-ms-grid-columns: (1fr)[3];grid-template-columns: repeat(3, 1fr);}
+	.wv_about_count{
+		position: absolute;
+		right: 0;
+		width: 130px;
+		border: none;
+		top: -65px;;
+	}
+	.wv_about_title{
+		border-bottom: 1px dashed #818181;
+		padding-bottom: 10px;
+		margin-bottom: 25px;
+	}
+	.wv_about_slider_item .wv_about_slider_text{padding-top: 0px;}
+	.wv_about_slider_box {margin-top: 0;}
+	.wv-service-text-icon:before {
+		border-left: 238px solid rgba(255, 255, 255, 0);
+		top: -66px;
+		border-bottom: 66px solid #fff;
+	}
+}
+
+@media all and (max-width: 992px) {
+	.slider-content h1{font-size: 2rem;line-height: 40px;}
+	.main-slider{padding: 160px 0 100px 0;}
+	.slider-wave + .slider-wave {bottom: -20px;}
+	.main-slider-dots{right: 15%;}
+	.wv_about_slider_item .wv_about_slider_text{width:100%;padding-right:0}
+	.wv_about_slider_img, .wv_cats-left{display:none}
+	.wv-service-inner .col-lg-4{margin-bottom:30px}
+	.wv-map-overlay {right: 20%;}
+	.wv_footer-social ul a{font-size:0px}
+	footer{margin-top:150px}
+	.wv-map-overlay {width: 192%;right: 9.2%;}
+}
+
+@media all and (max-width: 768px) {
+	.slider-content h1{font-size: 1.8rem;line-height: 34px;}
+	.main-slider{padding: 140px 0 60px 0;}
+	.slider-wave + .slider-wave {bottom: -10px;}
+	.main-slider-dots{bottom: 6%;}
+	.slider-content p{font-size: 1.2rem}
+	.wv_cats-right ul{-ms-grid-columns: (1fr)[2];grid-template-columns: repeat(2, 1fr);}
+	.wv_cats-right{margin-bottom:60px;margin-left: 0;}
+	.wv_cats-box .section_body {-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+	.wv-service-text-icon:before {
+		top: -67px;
+		border-bottom: 70px solid #fff;
+		border-left: 315px solid rgba(255, 255, 255, 0);
+	}
+	.wv-map-address{-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin: 21px 0;}
+	address p i, address .mail i{top: -12px}
+	address .hours i {top: 8px;}
+	.wv-map-address .hours {
+		position: relative;
+		left: auto;
+		top: -10px;
+	}
+	.wv-map-address p{-webkit-box-align: unset;-ms-flex-align: unset;align-items: unset;font-weight: 500;}
+	.main-slider{margin-bottom:1rem!important}
+	.wv_staff {padding-top:20px}
+	footer{margin-top:100px}
+	.wv-map-title{
+		height: 100px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+	}
+	.wv-map-overlay {
+		width: 100%;
+		-webkit-transform: none;
+		    -ms-transform: none;
+		        transform: none;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100px;
+		top: auto;
+	}
+	.wv-map h3{display:none}
+	.wv-map-address{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		line-height: 20px;
+		position: relative;
+		margin: 29px 0;
+	}
+	.wv-map-address p{
+		font-size: 14px;
+		padding: 20px 0 0 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		margin: 0;
+	}
+	.wv-map-address p i{
+		font-size: 20px !important;
+		margin-right: 10px;
+	}
+	.wv-map-address .phone:after{
+		content: "Телефон";
+		position: absolute;
+		top: -4px;
+		left: 25px;
+	}
+	.wv-map-address .hours{padding-left: 28px;position: absolute;left: 145px;top: -20px;}
+	.wv-map-address .mail a{margin-left: 4px;}
+}
+
+@media all and (max-width: 580px) {
+	.slider-content h1{font-size: 1.6rem;line-height: 30px;}
+	.main-slider-dots{bottom: 5%;right: 2%;}
+	.wv_about_numbers{display:none !important;}
+	.wv_about_prev, .wv_about_next{border:1px solid #444;}
+	.wv_about_prev{margin-right:6px}
+	.wv_about_count{width:85px}
+	.wv_cats-right{margin-bottom:80px;}
+	.wv-service-text-icon:before, .wv-service-text-icon:after{display:none}
+	.wv-service-icon{top: -50px;}
+	.wv-service-text-icon{padding:50px 30px 75px;top: -87px;}
+	.wv-service-morebtn {right: 21px;bottom: 87px;}
+	.wv_reviews-box .slick-list, .wv_reviews-box .slick-slide{margin: 0;-webkit-box-shadow:none;box-shadow:none}
+	.wv_footer-social ul a i{margin-right: 0;}
+}
+
+@media all and (max-width: 480px) {
+	.wv-map-address {
+		-webkit-box-align: unset;
+		    -ms-flex-align: unset;
+		        align-items: unset;
+		margin: 11px 20px;
+	}
+	.wv-map-address .hours {top: -1px;}
+	.wv_footer-social ul li:last-child{display: none}
+	footer{margin-top:80px}
+	.wv-map-address{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;margin: 12px;}
+	.wv-map-address .phone:after{content:none}
+	.wv-map-address p {padding: 0;}
+	.wv-map-address p i{display: none;}
+	.wv-map-address .hours{position: static;padding: 0;}
+}
+
+@media all and (max-width: 420px) {
+	.slider-content h1{font-size: 1.6rem;line-height: 30px;}
+	.main-slider-dots{bottom: 4%;right: -6%;}
+	.wv_cats-box .wv_cats-right ul li {--card-height: 160px;--card-width: 160px}
+	.wv_about_count{top:auto;bottom:-30px;right:10px}
+	.wv_about_slider_title{font-size:1.4rem}
+	.wv_about_slider_subtitle{font-size:1rem}
+	.wv-service-text h3{font-size: 1.2rem;}
+	.wv-service-inner{padding: 10px !important;}
+	.wv-service-morebtn {right: 18px;}
+	footer{margin-top:60px}
+}
+
+@media all and (max-width: 375px) {
+	.slider-content h1{font-size: 1.4rem;line-height: 26px;}
+	.main-slider{padding: 140px 0 0px 0;}
+	.main-slider-dots{display: none}
+	.slider-content p{font-size: 1rem}
+	.wv_cats-box .wv_cats-right ul li {
+		--card-height: 140px;
+		--card-width: 140px;
+	}
+	.wv_cats-image {width: 65px;}
+	.wv_cats-header .wv_cats-title{font-size: 0.9rem}
+	.wv-service-morebtn {right: 16px;}
+	.wv_footer-social ul a i{
+		width: 60px;
+		height: 60px;
+		margin-top: 0px;
+	}
+	footer{margin-top:30px}
+}

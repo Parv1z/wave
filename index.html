@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Шаблон Wave</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/preloader.js"></script>
+</head>
+<body>
+	<!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loader">
+			<span class="circle-1"></span>
+			<span class="circle-2"></span>
+			<span class="circle-3"></span>
+			<span class="circle-4"></span>
+			<span class="circle-5"></span>
+		</div>
+	</div>
+	<!-- Preloader End -->
+	<div id="app" class="wrapper_main">
+
+		<!-- Header Start -->
+		<header class="header p-3">
+			<div class="container">
+				<div class="d-flex flex-wrap align-items-center justify-content-sm-center justify-content-between">
+					<div class="me-4 d-lg-none" style="width:50px;height:50px">
+						<button type="button" id="mobile-menu-btn">
+							<span></span>
+						</button>
+					</div>
+					<a href="/" class="d-flex align-items-center me-sm-4">
+						<img src="img/logo.svg" alt="Logo">
+					</a>
+					<nav id="mobile-menu" class="d-none">
+						<ul>
+							<li>
+								<a href="#" class="active">
+									<i class="wi-home me-1 "></i> 
+									<span>Главная</span>
+								</a>
+							</li>
+							<li>
+								<a href="/catalog">
+									<i class="wi-folder-open me-1 "></i> <span>Каталог</span>
+								</a>
+								<ul>
+									<li>
+										<a href="#">
+											<span class="nav-item-text">Бульдозеры</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nav-item-text">Автокраны</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nav-item-text">Погрузчик</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nav-item-text">Самосвалы</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nav-item-text">Экскаваторы</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="nav-item-text">Показать все</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#"><i class="wi-printer me-1 "></i> <span>Услуги</span></a></li>
+							<li><a href="#"><i class="wi-lamp me-1 "></i> <span>О компании</span></a></li>
+							<li><a href="#"><i class="wi-location2 me-1 "></i> <span>Контакты</span></a></li>
+						</ul>
+					</nav>
+					<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center d-none d-lg-flex">
+						<li>
+							<a href="#" class="nav-link px-2 active">
+								<i class="wi-home me-1 d-none d-xxl-inline"></i> 
+								<span>Главная</span>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link px-2 dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="wi-folder-open me-1 d-none d-xxl-inline"></i> <span>Каталог</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a title="Бульдозеры" class="dropdown-item text-nowrap" href="#" target="_self">
+										<span class="nav-item-text">Бульдозеры</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a title="Автокраны" class="dropdown-item text-nowrap" href="#" target="_self">
+										<span class="nav-item-text">Автокраны</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a title="Погрузчик" class="dropdown-item text-nowrap" href="#" target="_self">
+										<span class="nav-item-text">Погрузчик</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a title="Самосвалы" class="dropdown-item text-nowrap" href="#" target="_self">
+										<span class="nav-item-text">Самосвалы</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a title="Экскаваторы" class="dropdown-item text-nowrap" href="#" target="_self">
+										<span class="nav-item-text">Экскаваторы</span>
+									</a>
+								</li>
+								<li><hr class="dropdown-divider"></li>
+								<li class="nav-item">
+									<a title="Показать все" class="dropdown-item text-nowrap" href="#" target="_self">
+										<span class="nav-item-text">Показать все</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#" class="nav-link px-2 text-white"><i class="wi-printer me-1 d-none d-xxl-inline"></i> <span>Услуги</span></a></li>
+						<li><a href="#" class="nav-link px-2 text-white"><i class="wi-lamp me-1 d-none d-xxl-inline"></i> <span>О компании</span></a></li>
+						<li><a href="#" class="nav-link px-2 text-white"><i class="wi-location2 me-1 d-none d-xxl-inline"></i> <span>Контакты</span></a></li>
+					</ul>
+					<div class="text-end d-none d-sm-flex">
+						<div class="infobox me-5 d-none d-lg-none d-md-flex d-xl-flex">
+							<div class="infobox-icon"><i class="wi-chronometer"></i></div>
+							<div class="infobox-info">
+								<div class="infobox-title">График работы</div>
+								<div class="infobox-body">Пн-вс 08:00-22:00</div>
+							</div>
+						</div>
+						<div class="infobox">
+							<div class="infobox-icon"><i class="wi-phone"></i></div>
+							<div class="infobox-info">
+								<div class="infobox-title">Наш телефон</div>
+								<div class="infobox-body"><a href="tel:71234567890">+7 (123) 456 7890</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<!-- Slider Start -->
+		<section class="main-slider mb-5">
+			<div class="slider-circle-box">
+				<span class="circle one right animate-this"></span>
+				<span class="circle two right animate-this"></span>
+				<span class="circle three right animate-this"></span>
+				<span class="circle four right animate-this"></span>
+				<span class="circle five left animate-this"></span>
+				<span class="circle six left animate-this"></span>
+				<span class="circle seven left animate-this"></span>
+				<span class="circle eight left animate-this"></span>
+				<span class="circle nine left animate-this"></span>
+				<span class="circle ten left animate-this"></span>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div id="main-slider-wrapper">
+						<div class="main-slider-item align-items-center">
+							<div class="col-lg-6">
+								<div class="slider-content">
+									<h1 class="animate__animated animate__fadeInUp">Аренда спецтехники по выгодной цене</h1>
+									<p class="animate__animated animate__fadeInUp animate__delay-1s">Арендовать или заказать услуги спецтехники по выгодной цене в компании «Имя компании».</p>
+									<div class="slider-btn">
+										<a href="#contact-us" class="btn btn-warning animate__animated animate__fadeInUp animate__delay-1s" title="Contact Us"><span>Обратный звонок</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 d-none d-md-block">
+								<div class="slider-img animate__animated animate__jackInTheBox">
+									<img src="img/all.png" alt="Banner">
+								</div>
+							</div>
+						</div>
+						<div class="main-slider-item align-items-center">
+							<div class="col-lg-6">
+								<div class="slider-content">
+									<h1 class="animate__animated animate__fadeInUp">Аренда экскаватора в вашем городе</h1>
+									<p class="animate__animated animate__fadeInUp animate__delay-1s">Заказать услуги экскаватора в Химках по выгодной цене в компании «Имя компании».</p>
+									<div class="slider-btn">
+										<a href="#contact-us" class="btn btn-warning animate__animated animate__fadeInUp animate__delay-1s" title="Contact Us"><span>Обратный звонок</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="slider-img animate__animated animate__fadeIn">
+									<img src="img/excavator.png" alt="Banner">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-slider-dots"></div>
+			<svg xmlns="http://www.w3.org/2000/svg" class="slider-wave" viewBox="0 90 1440 180"><path fill="#CCEAFF" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,218.7C384,235,480,245,576,229.3C672,213,768,171,864,154.7C960,139,1056,149,1152,144C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+			<svg xmlns="http://www.w3.org/2000/svg" class="slider-wave" viewBox="0 90 1440 180">
+			  <path fill="#fff" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,218.7C384,235,480,245,576,229.3C672,213,768,171,864,154.7C960,139,1056,149,1152,144C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+			</svg>
+		</section>
+		<!-- Slider End -->
+		
+		<main>
+			<!-- Categoty Start -->
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section_box wv_cats-box">
+								<h2 class="section_title mt-4 mb-4">Категории</h2>
+								<div class="section_body d-flex">
+									<div class="wv_cats-left col-md-3">
+										<div class="wv_cats-bg">
+											<img src="img/traktor.webp" alt="Категории" title="Категории">
+										</div>
+									</div>
+									<div class="wv_cats-right">
+										<ul class="wv_cats-list">
+											<li>
+												<div class="wv_cats-body">
+													<div class="wv_cats-cover">
+														<img class="wv_cats-image" src="img/icons/bulldozer.png" alt="bulldozer" />
+													</div>
+													<header class="wv_cats-header">
+														<div class="wv_cats-title">Бульдозеры</div>
+														<p class="wv_cats-subtitle">3 записей</p>
+													</header>
+												</div>
+											</li>
+											<li>
+												<div class="wv_cats-body">
+													<div class="wv_cats-cover">
+														<img class="wv_cats-image" src="img/icons/crane.png" alt="crane" >
+													</div>
+													<header class="wv_cats-header">
+														<div class="wv_cats-title">Автокраны</div>
+														<p class="wv_cats-subtitle">1 запись</p>
+													</header>
+												</div>
+											</li>
+											<li>
+												<div class="wv_cats-body">
+													<div class="wv_cats-cover">
+														<img class="wv_cats-image" src="img/icons/forklift.png" alt="forklift" >
+													</div>
+													<header class="wv_cats-header">
+														<div class="wv_cats-title">Погрузчик</div>
+														<p class="wv_cats-subtitle">9 записей</p>
+													</header>
+												</div>
+											</li>
+											<li>
+												<div class="wv_cats-body">
+													<div class="wv_cats-cover">
+														<img class="wv_cats-image" src="img/icons/mixer.png" alt="mixer" >
+													</div>
+													<header class="wv_cats-header">
+														<div class="wv_cats-title">Бетоносместители</div>
+														<p class="wv_cats-subtitle">0 записей</p>
+													</header>
+												</div>
+											</li>
+											<li>
+												<div class="wv_cats-body">
+													<div class="wv_cats-cover">
+														<img class="wv_cats-image" src="img/icons/truck.png" alt="truck" >
+													</div>
+													<header class="wv_cats-header">
+														<div class="wv_cats-title">Самосвалы</div>
+														<p class="wv_cats-subtitle">6 записей</p>
+													</header>
+												</div>
+											</li>
+											<li>
+												<div class="wv_cats-body">
+													<div class="wv_cats-cover">
+														<img class="wv_cats-image" src="img/icons/xcavator.png" alt="xcavator" >
+													</div>
+													<header class="wv_cats-header">
+														<div class="wv_cats-title">Экскаваторы</div>
+														<p class="wv_cats-subtitle">3 записей</p>
+													</header>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Categoty End -->
+			
+			<!-- About Start -->
+			<section>
+				<div class="wave_section_top">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 160 1440 160"><path fill="#CCEAFF" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+				</div>
+				<div class="wave_section_center pt-5 pb-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="section_box">
+									<h2 class="section_title wv_about_title">О компании</h2>
+									<div class="section_body">
+										<div class="wv_about_count">
+											<div class="wv_about_prev"><i class="wi-angle-left"></i></div>
+											<div class="wv_about_numbers" style="display: block;">
+												<span class="active">01</span> / <span class="total"></span>
+											</div>
+											<div class="wv_about_next"><i class="wi-angle-right"></i></div>
+										</div>
+										<div class="wv_about_slider_box">
+											<div class="wv_about_slider_item">
+												<div class="wv_about_slider_text">
+													<span class="wv_about_slider_title">Гарантия и срок</span>
+													<span class="wv_about_slider_subtitle">Благодаря крупнейшему арендному парку мы всегда можем обеспечить объект техникой</span>
+												</div>
+												<div class="wv_about_slider_img">
+													<img src="img/about1.webp" alt="">
+												</div>
+											</div>
+											<div class="wv_about_slider_item">
+												<div class="wv_about_slider_text">
+													<span class="wv_about_slider_title">Быстрая доставка</span>
+													<span class="wv_about_slider_subtitle">Мы можем оперативно доставить спецтехнику на любой объект Москвы и Московской области</span>
+												</div>
+												<div class="wv_about_slider_img">
+													<img src="img/about2.webp" alt="">
+												</div>
+											</div>
+											<div class="wv_about_slider_item">
+												<div class="wv_about_slider_text">
+													<span class="wv_about_slider_title">Техническая поддержка</span>
+													<span class="wv_about_slider_subtitle">Техническая поддержка, работающая круглосуточно семь дней в неделю, незамедлительно поможет в решении возникших сложностей</span>
+												</div>
+												<div class="wv_about_slider_img">
+													<img src="img/about3.webp" alt="">
+												</div>
+											</div>
+											<div class="wv_about_slider_item">
+												<div class="wv_about_slider_text">
+													<span class="wv_about_slider_title">Гибкость</span>
+													<span class="wv_about_slider_subtitle">Для решения небольших задач технику можно арендовать на срок от одного дня</span>
+												</div>
+												<div class="wv_about_slider_img">
+													<img src="img/about4.webp" alt="">
+												</div>
+											</div>
+											<div class="wv_about_slider_item">
+												<div class="wv_about_slider_text">
+													<span class="wv_about_slider_title">Решение задач</span>
+													<span class="wv_about_slider_subtitle">Большой выбор видов техники позволит решить широкий спектр задач за оптимальную стоимость</span>
+												</div>
+												<div class="wv_about_slider_img">
+													<img src="img/about5.webp" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wave_section_bottom">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 170 1440 100">
+					  <path fill="#CCEAFF" fill-opacity="1" d="M0,256L48,256C96,256,192,256,288,256C384,256,480,256,576,250.7C672,245,768,235,864,224C960,213,1056,203,1152,197.3C1248,192,1344,192,1392,192L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+					</svg>
+				</div>
+			</section>
+			<!-- About End -->
+
+			<!-- Counters Start -->
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section_box wv-counters-box">
+								<h2 class="section_title d-flex justify-content-center m-5">Счетчики</h2>
+								<div class="section_body">
+									<div class="row justify-content-center justify-content-lg-between text-center">
+										<div class="col-sm-6 col-lg-3 col-xl-auto wv_counters-item mb-4">
+											<div class="wv_counters-inner">
+												<div class="wv_counters-circle"></div>
+												<span class="wv_wd-counter" data-number="750"></span>
+												<div class="wv_counters-icon">
+													<i class="wi-users"></i>
+												</div>
+												<h3 class="wv_counters-title">Клиенты</h3>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-3 col-xl-auto wv_counters-item mb-4">
+											<div class="wv_counters-inner">
+												<div class="wv_counters-circle"></div>
+												<span class="wv_wd-counter" data-number="56"></span>
+												<div class="wv_counters-icon">
+													<i class="wi-medal"></i>
+												</div>
+												<h3 class="wv_counters-title">Награды</h3>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-3 col-xl-auto wv_counters-item mb-4">
+											<div class="wv_counters-inner">
+												<div class="wv_counters-circle"></div>
+												<span class="wv_wd-counter" data-number="1300"></span>
+												<div class="wv_counters-icon">
+													<i class="wi-globe"></i>
+												</div>
+												<h3 class="wv_counters-title">Что то еще</h3>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-3 col-xl-auto wv_counters-item mb-4">
+											<div class="wv_counters-inner">
+												<div class="wv_counters-circle"></div>
+												<span class="wv_wd-counter" data-number="1300"></span>
+												<div class="wv_counters-icon">
+													<i class="wi-printer"></i>
+												</div>
+												<h3 class="wv_counters-title">Проектов</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Counters End -->
+
+			<!-- Service Start -->
+			<section>
+				<svg class="wv-waves-anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+					<defs>
+						<path id="wvwa-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+						<linearGradient id="wvwa-gradient">
+							<stop offset="5%" stop-color="#ED5221"></stop>
+							<stop offset="95%" stop-color="#F4B30B"></stop>
+						</linearGradient>
+					</defs>
+					<g class="wv-waves_parallax">
+						<use xlink:href="#wvwa-wave" x="48" y="0" fill="#F6FAFC"></use>
+						<use xlink:href="#wvwa-wave" x="48" y="5" fill="#F8F3FF"></use>
+					</g>
+				</svg>
+				<div class="wv-service-box pb-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="section_box">
+									<h2 class="section_title d-flex justify-content-center m-4">Наши услуги</h2>
+									<div class="section_body wv-service-inner p-5">
+										<div class="row justify-content-center">
+											<div class="col-lg-4 col-md-6">
+												<div class="wv-service-item position-relative">
+													 <div class="wv-service-img position-relative">
+														<img width="370" height="290" src="img/snow.jpg" alt="snow" />
+													</div>
+													<div class="wv-service-text-icon position-relative">
+														<div class="wv-service-icon d-flex align-items-center justify-content-center position-absolute">
+															<i class="wi-snowflake-o"></i>
+														</div>
+														<div class="wv-service-text position-relative headline pera-content">
+															<h3><a href="/">Уборка и вывоз снега</a></h3>
+															<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
+														</div>
+													</div>
+													<div class="wv-service-morebtn position-absolute">
+														<a class="d-flex align-items-center justify-content-center text-uppercase" href="https://themexriver.com/wp/fastrans/air-freight/">Подробнее <i class="wi-arrow-right2"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6">
+												<div class="wv-service-item position-relative">
+													<div class="wv-service-img position-relative">
+														<img width="370" height="290" src="img/water.jpg" alt="water" />
+													</div>
+													<div class="wv-service-text-icon position-relative">
+														<div class="wv-service-icon d-flex align-items-center justify-content-center position-absolute">
+															<i class="wi-tint"></i>
+														</div>
+														<div class="wv-service-text position-relative headline pera-content">
+															<h3><a href="/">Выкачка выгребных ям</a></h3>
+															<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
+														</div>
+													</div>
+													<div class="wv-service-morebtn position-absolute">
+														<a class="d-flex align-items-center justify-content-center text-uppercase" href="https://themexriver.com/wp/fastrans/transparent-pricing/">Подробнее <i class="wi-arrow-right2"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6">
+												<div class="wv-service-item position-relative">
+													<div class="wv-service-img position-relative">
+														<img width="370" height="290" src="img/katlavan.jpg" alt="katlavan" />
+													</div>
+													<div class="wv-service-text-icon position-relative">
+														<div class="wv-service-icon d-flex align-items-center justify-content-center position-absolute">
+															<i class="wi-flag"></i>
+														</div>
+														<div class="wv-service-text position-relative headline pera-content">
+															<h3><a href="/">Рытье котлованов</a></h3>
+															<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
+														</div>
+													</div>
+													<div class="wv-service-morebtn position-absolute">
+														<a class="d-flex align-items-center justify-content-center text-uppercase" href="https://themexriver.com/wp/fastrans/trusted-franchise/">Подробнее <i class="wi-arrow-right2"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Service End -->
+			
+			<!-- Staff Start -->
+			<section>
+				<div class="wv_staff pt-md-5 pb-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="section_box">
+									<h2 class="section_title d-flex justify-content-center mt-4 mb-5">Наша команда</h2>
+									<div class="section_body">
+										<div class="wv_staff-box">
+											<div class="wv_staff-slide">
+												<div class="wv_staff-item">
+													<div class="wv_staff-bg"></div>
+													<div class="wv_staff-bg2"></div>
+													<div class="wv_staff-bg3"></div>
+													<img src="img/user1.webp" alt="Попов Александр Иванович" title="Попов Александр Иванович" />
+												</div>
+												<div class="wv_staff-info">
+													<h3>Попов Александр Иванович</h3>
+													<p class="wv_staff-desc">Веб-разработчик</p>
+												</div>
+											</div>
+											<div class="wv_staff-slide">
+												<div class="wv_staff-item">
+													<div class="wv_staff-bg"></div>
+													<div class="wv_staff-bg2"></div>
+													<div class="wv_staff-bg3"></div>
+													<img src="img/user2.webp" alt="Зубкова Вероника Денисовна" title="Зубкова Вероника Денисовна" />
+												</div>
+												<div class="wv_staff-info">
+													<h3>Зубкова Вероника Денисовна</h3>
+													<p class="wv_staff-desc">UX/UI Дизайнер</p>
+												</div>
+											</div>
+											<div class="wv_staff-slide">
+												<div class="wv_staff-item">
+													<div class="wv_staff-bg"></div>
+													<div class="wv_staff-bg2"></div>
+													<div class="wv_staff-bg3"></div>
+													<img src="img/user3.webp" alt="Титов Виктор Тимофеевич" title="Титов Виктор Тимофеевич" />
+												</div>
+												<div class="wv_staff-info">
+													<h3>Титов Виктор Тимофеевич</h3>
+													<p class="wv_staff-desc">SEO оптимизатор</p>
+												</div>
+											</div>
+											<div class="wv_staff-slide">
+												<div class="wv_staff-item">
+													<div class="wv_staff-bg"></div>
+													<div class="wv_staff-bg2"></div>
+													<div class="wv_staff-bg3"></div>
+													<img src="img/user4.webp" alt="Куликова Дарья Глебовна" title="Куликова Дарья Глебовна" />
+												</div>
+												<div class="wv_staff-info">
+													<h3>Куликова Дарья Глебовна</h3>
+													<p class="wv_staff-desc">HR менеджер</p>
+												</div>
+											</div>
+											<div class="wv_staff-slide">
+												<div class="wv_staff-item">
+													<div class="wv_staff-bg"></div>
+													<div class="wv_staff-bg2"></div>
+													<div class="wv_staff-bg3"></div>
+													<img src="img/user5.webp" alt="Андреев Артемий Олегович" title="Андреев Артемий Олегович" />
+												</div>
+												<div class="wv_staff-info">
+													<h3>Андреев Артемий Олегович</h3>
+													<p class="wv_staff-desc">Директор</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Staff End -->
+
+			<!-- Map Start -->
+			<section>
+				<div class="section_box wv-map">
+					<div class="section_body">
+						<div class="wv-map-overlay"></div>
+						<div class="container">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wv-map-title">
+								<h2 class="section_title mb-4">Контакты</h2>
+								<address class="wv-map-address">
+									<p class="phone"><i class="wi-volume-control-phone"></i> 8 (800) 505-98-23</p>
+									<p class="hours"><i class="wi-chronometer"></i> Время работы:<br />Пн-Пт 9:00 &#8212; 18:00</p>
+									<p class="mail"><i class="wi-envelope-o"></i> Email: <a href="mailto:demo@demo.ru">demo@demo.ru</a></p>
+								</address>
+							</div>
+						</div>
+						<div class="wv-map-box">
+							<div id="map" class="mymap"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Map End -->
+			<!-- Reviews Start -->
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section_box pt-4 pb-5">
+								<h2 class="section_title d-flex justify-content-center mt-5 mb-5">Отзывы</h2>
+								<div class="section_body">
+									<div class="wv_reviews-box">
+										<div class="wv_reviews-slide bg-success">
+											<i class="wi-quote-left"></i>
+											<div class="wv_reviews-item">
+												<p class="wv_reviews-desc">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+											</div>
+											<div class="wv_reviews-info">
+												<img src="img/user1.webp" alt="Попов Александр" title="Попов Александр" />
+												<h3>Попов Александр</h3>
+											</div>
+										</div>
+										<div class="wv_reviews-slide bg-primary">
+											<i class="wi-quote-left"></i>
+											<div class="wv_reviews-item">
+												<p class="wv_reviews-desc">При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+											</div>
+											<div class="wv_reviews-info">
+												<img src="img/user2.webp" alt="Зубкова Вероника" title="Зубкова Вероника" />
+												<h3>Зубкова Вероника</h3>
+											</div>
+										</div>
+										<div class="wv_reviews-slide bg-danger">
+											<i class="wi-quote-left"></i>
+											<div class="wv_reviews-item">
+												<p class="wv_reviews-desc">Идейные соображения высшего порядка, а также консультация с широким активом требуют от нас анализа модели развития. Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и модернизации форм развития. </p>
+											</div>
+											<div class="wv_reviews-info">
+												<img src="img/user3.webp" alt="Титов Виктор" title="Титов Виктор" />
+												<h3>Титов Виктор</h3>
+											</div>
+										</div>
+										<div class="wv_reviews-slide bg-info">
+											<i class="wi-quote-left"></i>
+											<div class="wv_reviews-item">
+												<p class="wv_reviews-desc">Товарищи! реализация намеченных плановых заданий позволяет выполнять важные задания по разработке новых предложений. Повседневная практика показывает, что рамки и место обучения кадров требуют от нас анализа направлений прогрессивного развития.</p>
+											</div>
+											<div class="wv_reviews-info">
+												<img src="img/user4.webp" alt="Куликова Дарья" title="Куликова Дарья" />
+												<h3>Куликова Дарья</h3>
+											</div>
+										</div>
+										<div class="wv_reviews-slide bg-secondary">
+											<i class="wi-quote-left"></i>
+											<div class="wv_reviews-item">
+												<p class="wv_reviews-desc">С другой стороны постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+											</div>
+											<div class="wv_reviews-info">
+												<img src="img/user5.webp" alt="Андреев Артемий" title="Андреев Артемий" />
+												<h3>Андреев Артемий</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Reviews End -->
+		</main>
+		
+		<footer>
+			<div class="wv_footer-waves">
+				<div class="container">
+                    <div class="row">
+						<div class="col-sm-6 col-lg-4">
+							<div class="card mb-3 mb-md-4">
+								<h2 class="card-header d-flex align-items-center justify-content-between">
+									<span>О нас</span>
+									<span class="links ml-auto">
+										<a class="btn btn-outline-info btn-sm" href="/pages/about.html">Подробнее</a>
+									</span>
+								</h2>
+								<div class="card-body">
+									<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезызвестный универсальный код речей.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4">
+							<div class="card mb-3 mb-md-4">
+								<h2 class="card-header d-flex align-items-center justify-content-between">
+								<span>Социальные сети</span>
+								</h2>
+								<div class="card-body">
+									<div class="wv-social-icons">
+										<ul>
+											<li>
+												<a href="https://facebook.com/" title="Facebook"><i class="wi-facebook-official"></i></a>
+											</li>
+											<li>
+												<a href="https://web.telegram.org/#/im" title="Telegram"><i class="wi-send"></i></a>
+											</li>
+											<li>
+												<a href="https://ok.ru" title="Одноклассники"><i class="wi-odnoklassniki-square"></i></a>
+											</li>
+											<li>
+												<a href="https://www.instagram.com" title="Instagram"><i class="wi-instagram"></i></a>
+											</li>
+											<li>
+												<a href="https://vk.com" title="В контакте"><i class="wi-vk"></i></a>
+											</li>
+											<li>
+												<a href="https://api.whatsapp.com/send?phone=71234567890" title="WhatsApp"><i class="wi-whatsapp"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div class="card mb-3 mb-md-4">
+								<h2 class="card-header d-flex align-items-center justify-content-between">
+									<span>Меню</span>
+								</h2>
+								<div class="card-body">
+									<ul class="nav menu-footer">
+										<li class="nav-item">
+											<a title="О проекте" class="nav-link text-nowrap" href="/pages/about.html">
+												<span class="nav-item-text">О проекте</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a title="Правила сайта" class="nav-link text-nowrap" href="/pages/rules.html">
+												<span class="nav-item-text">Правила сайта</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+                </div>
+			</div>
+			<div class="wv_footer-social">
+				<div class="container">
+					<div class="row">
+						<ul>
+							<li><a href="#"><i class="wi-facebook-official"></i>Facebook</a></li>
+							<li><a href="#"><i class="wi-odnoklassniki-square"></i>Ok</a></li>
+							<li><a href="#"><i class="wi-twitter"></i>Twitter</a></li>
+							<li><a href="#"><i class="wi-vk"></i>Vkontekte</a></li>
+							<li><a href="#"><i class="wi-instagram"></i>Instagram</a></li>
+							<li><a href="#"><i class="wi-youtube-play"></i>Youtube</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<h4 class="d-flex justify-content-center m-0 p-5 text-light"><a href="/" class="text-light">Имя компании</a><span class="mx-2">© 2022</span></h4>
+			
+		</footer>
+		
+		<!-- Scroll To Top Start -->
+		<a href="javascript:void(0);" id="scroll-to-top" class="scroll-to-top">
+			<i class="wi-angle-double-up" aria-hidden="true"></i>
+		</a>
+		<!-- Scroll To Top End -->
+
+	</div>
+	<link rel="stylesheet" type="text/css" href="fonts/waveico.css">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="libs/hc-menu/hc-offcanvas-nav.css">
+	<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/hc-menu/hc-offcanvas-nav.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=9995e89a-e072-49fc-add6-167098fe5be6&lang=ru_RU"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
