@@ -209,6 +209,12 @@ header .hc-nav-trigger span, header .hc-nav-trigger span::before, header .hc-nav
     speak: never;
 }
 body .hc-offcanvas-nav .nav-content>h2, body .hc-offcanvas-nav .nav-content>h3, body .hc-offcanvas-nav .nav-content>h4, body .hc-offcanvas-nav .nav-content>h5, body .hc-offcanvas-nav .nav-content>h6{color:#fff}
+#main-menu .dropdown:hover>.dropdown-menu{
+    display: block;
+    -webkit-animation: slide-up 0.3s ease-in-out;
+    animation: slide-up 0.3s ease-in-out;
+    margin: 0;
+}
 
 /*******/
 .main-slider {
